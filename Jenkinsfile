@@ -1,10 +1,6 @@
 pipeline{
   agent any
   stages{
-    stage('Install Dependencies'){
-      steps{
-        git 'https://github.com/Kambhampati-Ranjith-kumar/Automated-CI-CD-Pipeline-for-Flask-Task-Manager-Application-using-Jenkins-and-AWS-EC2.git'}
-    }
     stage('Run Tests'){
       steps{
         sh 'pytest'
