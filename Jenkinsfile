@@ -19,7 +19,7 @@ pipeline{
 
           ssh ubuntu@34.234.65.137 "
           pkill -f app.py || true
-          nohup python3 /home/ubuntu/app/app.py &
+          nohup python3 /home/ubuntu/app/app.py > /dev/null 2>&1 &
           "
           '''
         }
