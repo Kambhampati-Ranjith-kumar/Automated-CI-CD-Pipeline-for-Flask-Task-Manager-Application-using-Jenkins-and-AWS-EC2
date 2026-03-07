@@ -15,9 +15,9 @@ pipeline{
       steps{
         sshagent(['AWS-login']){
           sh '''
-          scp -r * ubuntu@3.80.215.195:/home/ubuntu/app/
+          scp -r * ubuntu@54.85.107.229:/home/ubuntu/app/
 
-          ssh ubuntu@3.80.215.195 "
+          ssh ubuntu@54.85.107.229 "
           pkill -f app.py 2>/dev/null || true && \
           nohup python3 /home/ubuntu/app/app.py > /dev/null 2>&1 &
           "
