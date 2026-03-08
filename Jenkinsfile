@@ -19,7 +19,7 @@ pipeline{
 
           ssh -o StrictHostKeyChecking=no ubuntu@54.85.107.229 << 'EOF'
           pkill -f app.py 2>/dev/null || true
-          nohup python3 /home/ubuntu/app/app.py > app.log 2>&1 & EOF
+          nohup python3 /home/ubuntu/app/app.py > app.log 2>&1 & 'EOF'
           '''
         }
       }
