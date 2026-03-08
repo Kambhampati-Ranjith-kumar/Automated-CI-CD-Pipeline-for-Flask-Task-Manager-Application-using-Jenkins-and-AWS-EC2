@@ -18,10 +18,10 @@ pipeline{
           scp -o StrictHostKeyChecking=no -r * ubuntu@54.85.107.229:/home/ubuntu/app/
 
           ssh -o StrictHostKeyChecking=no ubuntu@54.85.107.229 "
-          cd /home/ubuntu/app
-          pip3 install --break-system-packages -r requirements.txt
-          pkill -f app.py 2>/dev/null || true
-          nohup python3 app.py > output.log 2>&1 & 
+            cd /home/ubuntu/app
+            pip3 install --break-system-packages -r requirements.txt
+            pkill -f app.py 2>/dev/null || true
+            nohup python3 app.py > output.log 2>&1 & 
           "
           '''
         }
