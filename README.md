@@ -1,4 +1,9 @@
-# 🚀 Automated CI/CD Pipeline For Flask Task Manager
+# 🚀 Automated CI/CD Pipeline for Flask Task Manager
+
+![Jenkins](https://img.shields.io/badge/Jenkins-CI/CD-blue)
+![AWS](https://img.shields.io/badge/Cloud-AWS-orange)
+![Python](https://img.shields.io/badge/Python-3.x-green)
+![Flask](https://img.shields.io/badge/Framework-Flask-lightgrey)
 
 This project demonstrates a complete  CI/CD pipeline using Jenkins, GitHub Webhook, and AWS EC2 to automatically build, test, and deploy a Flask application.
 
@@ -110,8 +115,15 @@ Jenkins Pipeline
 
 ### Access the deployed application:
 ```
-http://<EC2-public-IP>:5000
+http://54.85.107.229:5000
 ```
+##### ⚠️ Note:
+The AWS EC2 insatnce used for deployment may be stopped periodically to avoid unnecessary AWS Charges.
+
+If the application URL is not accessible, the server is currently not running.
+
+However, the CI/CD application can be triggered anytime by pushing new code to this repository.
+
 ## 🧪 Automated Testing
 
 Unit tests are written using Pytest
